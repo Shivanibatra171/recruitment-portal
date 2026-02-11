@@ -108,9 +108,7 @@ Smart-Job-Portal/
           ├── main.js
           ├── jobDeatils.js
           │  
-          ├── assets/
-          │   └── images/
-          │       └── ui/
-          │           └── cities
-          │                └── profession
+          ├── images/
+          │   
+          │       
           └── README.md
