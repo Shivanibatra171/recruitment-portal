@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Apply Job</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+<h1>Apply for Job</h1>
+</header>
+<main>
+<form id="applyForm" class="form-container">
+<label for="name">Name:</label>
+<input type="text" id="name" placeholder="Enter your name">
+
+<label for="email">Email:</label>
+<input type="email" id="email" placeholder="Enter your email">
+
+<label for="country">Country:</label>
+<select id="country" required>
+<option value="">Select Country</option>
+<option value="Pakistan">Pakistan</option>
+<option value="India">India</option>
+<option value="USA">USA</option>
+<option value="UK">UK</option>
+</select>
+
+<label for="whatsapp">WhatsApp Number:</label>
+<input type="tel" id="whatsapp" placeholder="+92 Enter WhatsApp number">
+
+
+
+
+<label for="city">City:</label>
+<select id="city">
+<option value="">Select City</option>
+</select>
+
+<label for="profession">Profession:</label>
+<input type="text" id="profession" disabled>
+<label for="qualification">Qualification:</label>
+<input type="text" id="qualification" placeholder="Enter your highest qualification">
+
+<label for="experience">Experience (years):</label>
+<input type="number" id="experience" placeholder="Enter years of experience">
+
+<label for="skills">Skills (comma separated):</label>
+<input type="text" id="skills" placeholder="Enter your skills">
+<label for="jobType">Job Type:</label>
+<select id="jobType" required>
+    <option value="">Select Job Type</option>
+    <option value="Full-Time">Full-Time</option>
+    <option value="Part-Time">Part-Time</option>
+</select>
+
+<label for="Resume">Resume :</label>
+<input type="file" id="resume" accept=".pdf,.doc,.docx" required>
+
+<button type="submit">Apply Now</button>
+</form>
+</main>
+<script src="data.js"></script>
+<script src="apply.js"></script>
+</body>
+</html>

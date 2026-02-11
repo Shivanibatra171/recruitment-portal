@@ -1,0 +1,196 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color:#0e0d0d;
+}
+
+header {
+    background-color: #1f1f1f;
+    color: #ffffff;
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px;
+}
+
+.card {
+    background:rgb(12, 11, 11);
+    border-radius: 10px;
+    width: 220px;
+    padding: 15px;
+    box-shadow: 0 4px 6px white;
+    transition: transform 0.2s, box-shadow 0.2s;
+    color: rgb(255, 255, 255); /* card text white */
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(247, 243, 243, 0.89);
+}
+
+.card img {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    background-color: white;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #333; /* dark button */
+    color: #ebf1f1;
+    border: 1px solid #555;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #fffcfc; /* hover effect */
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+    background: #f1ecec; /* dark form background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(255,255,255,0.05);
+    color: #f7f2f2; /* form text white */
+}
+
+.form-container label {
+    margin: 10px 0 5px;
+    text-align: left;
+    color: #181212;
+}
+
+.form-container input,
+.form-container select {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #555;
+    background-color: #2a2a2a; /* dark input background */
+    color: #131010; /* input text white */
+}
+
+button[type="submit"] {
+    margin-top: 15px;
+}
+
+.whatsapp-input {
+    display: flex;
+    gap: 10px;
+}
+
+.whatsapp-input select {
+    width: 100px;
+    background-color: #2a2a2a;
+    color: #1f1a1a;
+    border: 1px solid #555;
+}
+
+.whatsapp-input input {
+    flex: 1;
+    background-color: #2a2a2a;
+    color: #080606;
+    border: 1px solid #555;
+}
+
+.success-message {
+    background-color: #155724; /* dark green bg */
+    color: #d4edda; /* text light green */
+    border: 1px solid #1f5132;
+    padding: 15px;
+    margin: 20px auto;
+    max-width: 500px;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+@media (max-width: 600px) {
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.success-card {
+    max-width: 500px;
+    margin: 30px auto;
+    padding: 25px;
+    border-radius: 15px;
+    background: linear-gradient(135deg,rgb(3, 5, 5)); /* green gradient */
+    color: #ffffff;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    animation: fadeInUp 0.6s ease forwards;
+}
+
+.success-card h2 {
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.success-card p {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.success-card img {
+    width: 80px;
+    height: 80px;
+    margin-top: 10px;
+}
+
+@keyframes fadeInUp {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+.progress-container {
+    position: relative;
+    width: 100%;
+    height: 25px;
+    background-color: #ffffff; /* background for unmatched part */
+    border-radius: 12px;
+    overflow: hidden;
+    margin: 15px 0;
+}
+
+.progress-bar {
+    height: 100%;
+    background-color: #eef3ef; /* green for matched part */
+    width: 0%;
+    transition: width 1s ease-in-out;
+}
+
+.progress-text {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #ffffff;
+    font-weight: bold;
+    line-height: 25px;
+    font-size: 14px;
+}
+.success-image {
+    width: 120px;
+    margin: 20px 0;
+}
+.success-card {
+    text-align: center;
+}
